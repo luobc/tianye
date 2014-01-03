@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_id: 1
+  cpu: MyString
+  memory: MyString
+  ethernet_lan: MyString
+  wlan: MyString
+  supported_os: MyString
+  footprint: MyString
+  connectors: MyString
+  chipset: MyString
+  api_support: MyString
+  video: MyString
+  power_consumption: MyString
+  standby: MyString
+  power_requirements: MyString
+  temperature: MyString
+  humidity: MyString
+  dimensions: MyString
+  MTBF: MyString
+  weight: MyString
+  shock: MyString
+  vibration: MyString
+
+two:
+  product_id: 1
+  cpu: MyString
+  memory: MyString
+  ethernet_lan: MyString
+  wlan: MyString
+  supported_os: MyString
+  footprint: MyString
+  connectors: MyString
+  chipset: MyString
+  api_support: MyString
+  video: MyString
+  power_consumption: MyString
+  standby: MyString
+  power_requirements: MyString
+  temperature: MyString
+  humidity: MyString
+  dimensions: MyString
+  MTBF: MyString
+  weight: MyString
+  shock: MyString
+  vibration: MyString

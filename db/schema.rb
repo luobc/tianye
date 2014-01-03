@@ -11,12 +11,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131228063643) do
+ActiveRecord::Schema.define(version: 20140103094041) do
 
   create_table "categories", force: true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "configurations", force: true do |t|
+    t.integer  "product_id"
+    t.string   "cpu"
+    t.string   "memory"
+    t.string   "ethernet_lan"
+    t.string   "wlan"
+    t.string   "supported_os"
+    t.string   "footprint"
+    t.string   "connectors"
+    t.string   "chipset"
+    t.string   "api_support"
+    t.string   "video"
+    t.string   "power_consumption"
+    t.string   "standby"
+    t.string   "power_requirements"
+    t.string   "temperature"
+    t.string   "humidity"
+    t.string   "dimensions"
+    t.string   "MTBF"
+    t.string   "weight"
+    t.string   "shock"
+    t.string   "vibration"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "products", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
   end
 
 end

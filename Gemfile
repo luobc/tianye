@@ -6,6 +6,7 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'activeadmin', github:'gregbell/active_admin'
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'thin'
 
 # Use SCSS for stylesheets

@@ -1,15 +1,20 @@
 <div class="container" style="margin-top: 100px;">
   <div class="jumbotron">
   	<h1>Hello</h1>
-    <p>Product description</p>
+    <p>Series description</p>
   </div>
 </div>
 <div class="container">
-  <% Product.where(series_id: @category.series).each do |p| %>
   <div class="row">
-  	<div class="col-md-4"><%= p.title %></div>
-    <div class="col-md-5"><%= p.description %></div>
-    <div class="col-md-3"></div>
+	<div class="col-md-8">
+	  <% Product.where(series_id: @category.series).each do |p| %>
+	  <div class="row">
+	  	<div class="col-md-5"><%= p.title %></div>
+	    <div class="col-md-7"><%= p.description %></div>
+	  </div>
+	  <% end %>	
+	</div>
+	<div class="col-md-4">Contact</div>
   </div>
-  <% end %>
+
 </div>

@@ -9,7 +9,9 @@
 	<div class="col-md-8">
 	  <% Product.where(series_id: @category.series).each do |p| %>
 	  <div class="row">
-	  	<div class="col-md-5"><%= p.title %></div>
+	  	<div class="col-md-5">
+	  	  <%= image_tag p.image.url(:medium) %>
+	  	</div>
 	    <div class="col-md-7"><%= p.description %></div>
 	  </div>
 	  <% end %>	

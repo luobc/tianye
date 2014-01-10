@@ -5,7 +5,7 @@
 	
 //µÚ¶þ²Ëµ¥
 		var menu2 = ms.addMenu(document.getElementById("menu2"));
-		menu2.addItem("- Computer In Package", "/product.php"); 
+		menu2.addItem("- Computer In Package", "/categories/1"); 
 		menu2.addItem("- Evaluation kits", "/product.php?sort=3");
 		menu2.addItem("- Extension Board", "/product.php?sort=13");
 

@@ -1,17 +1,17 @@
 
 
-mtDropDown.spacerGif = "_images/x.gif"; 
-mtDropDown.dingbatOn = "_images/nav/expand-1.gif"; 
-mtDropDown.dingbatOff = "_images/nav/expand-0.gif"; 
+mtDropDown.spacerGif = "/images/x.gif"; 
+mtDropDown.dingbatOn = "/images/nav/expand-1.gif"; 
+mtDropDown.dingbatOff = "/images/nav/expand-0.gif"; 
 mtDropDown.dingbatSize = 14; 
 mtDropDown.menuPadding = 1; 
 mtDropDown.itemPadding = 4; 
 mtDropDown.shadowSize = 2; 
 mtDropDown.shadowOffset = 3; 
 mtDropDown.shadowColor = "#888"; 
-mtDropDown.shadowPng = "/_images/grey-40.png"; 
+mtDropDown.shadowPng = "/images/grey-40.png"; 
 mtDropDown.backgroundColor = "white"; 
-mtDropDown.backgroundPng = "/_images/white-90.png"; 
+mtDropDown.backgroundPng = "/images/white-90.png"; 
 mtDropDown.hideDelay = 1000; 
 mtDropDown.slideTime = 200; 
 

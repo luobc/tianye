@@ -53,7 +53,7 @@
 		// this is a crappy example preloader. Use whichever one you want.
 		function loadImage(sFilename) {
 			var img = new Image();
-			img.src ="_images/nav/" + sFilename;
+			img.src ="/images/nav/" + sFilename;
 			return img;
 		}
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tianye</title>
+  <link href="/stylesheets/all.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script src="/javascripts/lwn.js"></script>
+ 
+  <%= csrf_meta_tags %>
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+  <div style="width:1002px; height:82px; position:relative; overflow:hidden; background:#FFFFFF">
+    <div align="left" style="width:960px;"><img src="images/logo.jpg"></div>
+  </div>
+</div>
+
+<%= render '/shared/navigater' %>
+<div align="center">
+  <div style="width:1002px; height:185px; position:relative; overflow:hidden; background:#FFFFFF; padding:15px 0 5px 0;">
+    <div style="width:960px; height:185px; overflow:hidden">
+      <img src="images/services.jpg" width="960">
+    </div>
+  </div>
+</div>
+
+<%= yield %>
+
+
+<div align="center">
+  <div style="width:1002px; height:111px; position:relative; overflow:hidden; background:#FFFFFF; line-height:21px; text-align:left">
+  <div style="width:102px; height:51px; position:absolute; left: 21px; top: 0px;"><img src="images/pinpai.jpg" width="484" height="109"></div>
+  <div style="width:315px; height:51px; position:absolute; left: 524px; top: 9px;">All TianyeIT production is performed at fully ISO 13485 compliant facilities, satisfying international customer and regulatory requirements for a broad range of industries including medical devices and related services.</div>
+ <div style="width:102px; height:51px; position:absolute; left: 867px; top: 11px;"><img src="images/iso.jpg" width="91" height="86"></div> 
+</div>
+</div>
+<div align="center">
+  
+<div style="width:1002px; height:161px; position:relative; overflow:hidden; background:#111111; line-height:21px; text-align:left">
+  <div class="b1" style="width:162px; height:144px; position:absolute; left: 31px; top: 11px;">
+    <div style="font-size:14px; color:#ffffff; font-weight:bold">PRODUCTS</div>
+	  <div><a href="/">System On Module (SOM)</a></div>
+	  <div><a href="/">Evaluation Kits</a></div>
+	  <div><a href="/">Single Board Computers</a></div>
+	  <div><a href="/">Extension Boards</a></div>
+  </div>
+  <div class="b1" style="width:162px; height:144px; position:absolute; left: 231px; top: 11px;">
+    <div style="font-size:14px; color:#ffffff; font-weight:bold">Latest SoMs</div>
+	  <div>
+	    <div><a href="#">SOM2416 - SAMSUNG 2416</a><a href="/"></a></div>
+        <div><a href="#">SOM6410 - SAMSUNG 6410</a><a href="/"></a></div>
+        <div><a href="#">CIP30X - TI AM335X</a></div>
+        <div>
+          <p><a href="#">CIP31X - TI AM37XX</a></p>
+        </div>
+        <div>
+          <p><a href="#">CIP41X - TI OMAP44XX</a></p>
+        </div>
+      <a href="/"></a></div>
+</div>
+  
+  <div class="b1" style="width:162px; height:144px; position:absolute; left: 431px; top: 11px;">
+    <div style="font-size:14px; color:#ffffff; font-weight:bold">Support</div>
+	  <div><a href="#">Contact Support</a><a href="/"></a></div>
+	  <div><a href="#" rel="nofollow" target="_blank">TianyeIT Wiki</a><a href="/"></a></div>
+  </div>
+  
+  <div class="b1" style="width:162px; height:144px; position:absolute; left: 631px; top: 11px;">
+    <div style="font-size:14px; color:#ffffff; font-weight:bold">Company</div>
+	  <div>
+	    <div><a href="/about.php?id=11">About TianyeIT</a></div>
+        <div><a href="news.php">News Room</a></div>
+        <div><a href="/about.php?id=12">Contact Us</a></div>
+	  </div>
+  </div>
+  
+  <div class="b1" style="width:162px; height:144px; position:absolute; left: 831px; top: 11px;">
+    <div style="font-size:14px; color:#ffffff; font-weight:bold">Connect with us</div>
+	  <div><a href="/">Face book</a></div>
+	  <div><a href="/">Twitter</a></div>
+  </div>
+  
+  </div>
+<div style="width:1002px; height:51px; position:relative; overflow:hidden; background:#1a1a1a; line-height:21px; text-align:left">
+  <div style="width:530px; height:31px; position:absolute; left: 32px; top: 13px; color:#4b4b38">Copyright © 2013 TianyeIT - Leading System on Module manufacturer. All Rights Reserved.</div>
+  <div style="width:102px; height:25px; position:absolute; left: 809px; top: 11px;"></div>
+</div>
+
+</div>
+ 
+</body>
+</html>

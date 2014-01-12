@@ -20,6 +20,7 @@ ActiveAdmin.register Product do
     column :description
     column :created_at
     column :updated_at
+    actions
   end
   
   form do |f|

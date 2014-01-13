@@ -13,5 +13,8 @@ ActiveAdmin.register Configuration do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  permit_params :product_id
+
+  
+  permit_params Configuration.column_names
+  
 end

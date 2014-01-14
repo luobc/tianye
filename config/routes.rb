@@ -1,5 +1,9 @@
 Tianye::Application.routes.draw do
 
+  get "services/index"
+  get "services/show"
+  get "solutions/index"
+  get "solutions/show"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root :to => 'home#index', :as => 'home'
@@ -7,6 +11,8 @@ Tianye::Application.routes.draw do
   
   resources :categories
   resources :products
+  resources :services
+  resources :solutions
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  layout 'products'
+  
   def index
     @categories = Category.all
   end

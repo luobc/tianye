@@ -1,1 +1,32 @@
 
+<div align="center">
+  <div class="main">
+  <div class="all">
+ <div class="right">
+      <div class="articles" style="font-weight:200;">
+        <div class="node">
+          <div class="name">Home » Service >> <%= @service.title %> </div>
+      </div>
+      <div class="content">
+        <div class="title"><%= @service.title %><br><br></div>
+
+        <div align="center">&nbsp;<br>
+		  <%= image_tag @service.image.url %>
+	   </div>
+      <div class="anything">
+	    <p><%= @service.description %></p>
+		<p><%= @service.detail.html_safe %></p>			
+      </div>
+      
+      </div>
+      </div>
+       <div>&nbsp;</div>
+  </div> 
+
+  	<div class="left" align="left">
+		<%= render '/shared/contact' %>
+	</div>
+
+  </div>
+</div>
+</div>

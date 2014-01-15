@@ -62,17 +62,18 @@
 </div>
   
   <div class="b1" style="width:162px; height:144px; position:absolute; left: 431px; top: 11px;">
-    <div style="font-size:14px; color:#ffffff; font-weight:bold">Support</div>
-	  <div><a href="#">Contact Support</a><a href="/"></a></div>
-	  <div><a href="#" rel="nofollow" target="_blank">TianyeIT Wiki</a><a href="/"></a></div>
+    <div style="font-size:14px; color:#ffffff; font-weight:bold">Supports</div>
+	  	<% Support.all.each do |s| %>
+		  <div><%= link_to s.title, supports_path %></div>
+		<% end %>
   </div>
   
   <div class="b1" style="width:162px; height:144px; position:absolute; left: 631px; top: 11px;">
     <div style="font-size:14px; color:#ffffff; font-weight:bold">Company</div>
 	  <div>
-	    <div><a href="/about.php?id=11">About TianyeIT</a></div>
-        <div><a href="news.php">News Room</a></div>
-        <div><a href="/about.php?id=12">Contact Us</a></div>
+		<% Company.all.each do |c| %>
+		  <div><%= link_to c.title, company_path(c) %></div>
+		<% end %>
 	  </div>
   </div>
   

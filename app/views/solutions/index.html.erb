@@ -1,2 +1,42 @@
-<h1>Solutions#index</h1>
-<p>Find me in app/views/solutions/index.html.erb</p>
+<div align="center">
+  <div class="main">
+  <div class="all">
+ <div class="right" style="width:730px;">
+  <div class="articles" style="width:708px;float:left;height:auto;overflow:hidden;margin:0px;padding:3px 10px 0px 10px;border-left:#E4E4E4 solid 1px;">
+  <div class="node">
+  <div class="name">Home » Solutions</div>
+  </div>
+  <div class="content" style="width:718px;float:left;margin:0px;height:auto;overflow:hidden;padding:0px;">
+    <div style="margin:10px; line-height:22px; text-align:left">TianyeIT customized solutions are engineered and manufactured for all industrial sectors. Fully integrated systems provide the critical components to optimize your product design, development and manufacture. TianyeIT experts have developed end-to-end solutions that deliver core technology capabilities across a unique range of industries.
+	</div>
+   
+<div class="guo_content">
+<% @solutions.each do |s| %>
+<div class="guo_block" align="left">	
+	<table width="680" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+<td width="210">	
+	<%= link_to image_tag(s.image.url(:thumb), :class => 'guo_img'), service_path(s)%>
+</td>
+<td valign="top"><ul class="guo_blist">
+<h3><%= s.title %></h3>
+<%= s.description %>
+<h3><span><%= link_to 'More >>' , solution_path(s) %></span></h3>   																		
+	</ul></td>
+  </tr>
+</tbody></table>
+	</div>
+<% end %>
+		             	
+   </div>               
+  <div align="center"><br>&nbsp;<br><br></div>
+  </div>
+  </div>
+  </div> 
+	<div class="left" align="left">
+		<%= render '/shared/contact' %>
+	</div>
+
+  </div>
+</div>
+</div>

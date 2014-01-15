@@ -1,2 +1,33 @@
-<h1>Solutions#show</h1>
-<p>Find me in app/views/solutions/show.html.erb</p>
+
+
+<div align="center">
+  <div class="main">
+  <div class="all">
+ <div class="right">
+      <div class="articles" style="font-weight:200;">
+        <div class="node">
+          <div class="name">Home » Solutions >> <%= @solution.title %> </div>
+      </div>
+      <div class="content">
+        <div class="title"><%= @solution.title %><br><br></div>
+
+        <div align="center">&nbsp;<br>
+		  <%= image_tag @solution.image.url %>
+	   </div>
+      <div class="anything">
+	    <p><%= @solution.description %></p>
+		<p><%= @solution.detail.html_safe %></p>			
+      </div>
+      
+      </div>
+      </div>
+       <div>&nbsp;</div>
+  </div> 
+
+  	<div class="left" align="left">
+		<%= render '/shared/contact' %>
+	</div>
+
+  </div>
+</div>
+</div>

@@ -14,4 +14,26 @@ ActiveAdmin.register Solution do
   #  permitted
   # end
   
+  permit_params :title, :description, :image, :detail ,:image_file_name, :image_content_type, :image_file_size, :image_updated_at
+  
+  index do
+    column :id
+    column :title
+    column :description
+    column :detail
+    column :created_at
+    column :updated_at
+    actions
+  end
+  
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :description
+      f.input :detail
+      f.input :image, :as => :file
+    end
+    f.actions
+  end
+  
 end

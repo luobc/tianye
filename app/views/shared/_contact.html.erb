@@ -1,0 +1,22 @@
+<div class="prolist" style=" border:1px solid #e9e9e9;">
+  <div class="nav" style="margin:10px">
+	  <div class="name" style="color:#FF9900; font-size:16px">Categories</div>
+	  <ul>
+	  <% Category.all.each do |c| %>
+	    <li><%= link_to c.title, category_path(c) %></li>
+	  <% end %>
+	  </ul>
+	</div>
+</div>
+  <div class="prolist" style=" border:1px solid #e9e9e9;margin-top:20px">
+    <div class="nav" style="margin:10px">
+	    <div class="name" style="color:#FF9900; font-size:16px">Contact Us</div>
+		<ul>
+			<li>Shanghai TianyeIT CO, LTD</li>
+			<li>Tel: +86-21-60445500 </li>
+			<li>E-Mail:   sales@tianyeit.com </li>
+			<li>Online Skype: nandcon /   dtt015 </li>
+			<li>Addr: No.200, East of Guoding   Road, Shanghai </li>
+		</ul>
+    </div>
+  </div>

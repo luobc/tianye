@@ -16,6 +16,7 @@ ActiveAdmin.register Product do
   permit_params :title, :description, :series_id, :image, :image_file_name, :image_content_type, :image_file_size, :image_updated_at
   
   index do
+    column :id
     column :title
     column :description
     column :created_at

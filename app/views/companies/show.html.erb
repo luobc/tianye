@@ -1,0 +1,47 @@
+<div align="center">
+  <div class="main">
+  <div class="all">
+ <div class="right" style="width:730px;">
+  <div class="articles" style="width:708px;float:left;height:auto;overflow:hidden;margin:0px;padding:3px 10px 0px 10px;border-left:#E4E4E4 solid 1px;">
+  <div class="node">
+  <div class="name">Home » About US >> <%= @company.title %></div>
+  </div>
+  <div class="content" style="width:718px;float:left;margin:0px;height:auto;overflow:hidden;padding:0px;">  
+    <div class="guo_content">
+      <div class="guo_block" align="left">	
+		<h3><%= @company.title%></h3>
+		<%= @company.content.html_safe %>
+      </div>
+   </div>               
+   <div align="center"><br>&nbsp;<br><br></div>
+ </div>
+  </div>
+  </div> 
+	<div class="left" align="left">
+		<div class="prolist" style=" border:1px solid #e9e9e9;">
+		  <div class="nav" style="margin:10px">
+			  <div class="name" style="color:#FF9900; font-size:16px">About Us</div>
+			  <ul>
+				<% Company.all.each do |c| %>
+				  <li><%= link_to c.title, company_path(c) %></li>
+				<%end %>
+			  </ul>
+			</div>
+		</div>
+		  <div class="prolist" style=" border:1px solid #e9e9e9;margin-top:20px">
+		    <div class="nav" style="margin:10px">
+			    <div class="name" style="color:#FF9900; font-size:16px">Contact Us</div>
+				<ul>
+					<li>Shanghai TianyeIT CO, LTD</li>
+					<li>Tel: +86-21-60445500 </li>
+					<li>E-Mail:   sales@tianyeit.com </li>
+					<li>Online Skype: nandcon /   dtt015 </li>
+					<li>Addr: No.200, East of Guoding   Road, Shanghai </li>
+				</ul>
+		    </div>
+		  </div>
+	</div>
+
+  </div>
+</div>
+</div>
